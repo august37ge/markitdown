@@ -5,6 +5,14 @@
 
 This package provides tools to convert documents, spreadsheets, presentations,
 images, audio, and web content into clean Markdown format.
+
+Supported formats include:
+- Documents: PDF, Word (.docx), PowerPoint (.pptx)
+- Spreadsheets: Excel (.xlsx), CSV
+- Images: JPEG, PNG (with optional OCR/vision support)
+- Web: HTML, URLs
+- Audio: MP3, WAV (with speech transcription)
+- Archives: ZIP files
 """
 
 from markitdown._markitdown import MarkItDown, DocumentConverter, ConversionResult
