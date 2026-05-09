@@ -13,6 +13,14 @@ Supported formats include:
 - Web: HTML, URLs
 - Audio: MP3, WAV (with speech transcription)
 - Archives: ZIP files
+
+Usage example::
+
+    from markitdown import MarkItDown
+
+    md = MarkItDown()
+    result = md.convert("document.pdf")
+    print(result.text_content)
 """
 
 from markitdown._markitdown import MarkItDown, DocumentConverter, ConversionResult
